@@ -4,40 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.min.css"
-    />
     <title>promomix</title>
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <link rel="stylesheet" href="./font/stylesheet.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <a href="/">promomix</a>
-      <nav>
-        <ul>
-          <li><button type="button">поиск</button></li>
-          <li><a href="tel:84964290900">8 496 429 09 00</a></li>
-          <li><button type="button">оставить заявку</button></li>
+    <header class="header" id="header">
+      <nav class="navigator container">
+        <a class="logo" href="./index.html">
+          <img src="./images/svg/logo.svg" alt=""
+        /></a>
+        <ul class="list">
+          <li class="list-item">
+            <img src="./images/svg/Vector.svg" alt="" width="16" height="16" />
+            <button type="button">поиск</button>
+          </li>
+          <li class="list-item">
+            <a href="tel:84964290900">8 496 429 09 00</a>
+          </li>
+          <li class="list-item">
+            <button type="button">оставить заявку</button>
+          </li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="hero">
-        <h1>
-          Promomix –<br />
-          рекламное агентство<br />
-          полного цикла
-        </h1>
-        <ul>
-          <li><a href="/">Facebook</a></li>
-          <li><a href="/">Vkontakte</a></li>
-          <li><a href="/">Instagram</a></li>
-        </ul>
+        <div class="container">
+          <h1>
+            <span>Promomix –</span> <br />
+            рекламное агентство<br />
+            полного цикла
+          </h1>
+          <ul class="social-list list">
+            <li class="list-item"><a href="/">Facebook</a></li>
+            <li class="list-item"><a href="/">Vkontakte</a></li>
+            <li class="list-item"><a href="/">Instagram</a></li>
+          </ul>
+        </div>
       </section>
-      <section>
+      <section class="features">
         <h2>услуги</h2>
         <p>Ключевые направления</p>
-        <ul>
+        <ul class="list">
           <li><a href="/">Наружная реклама</a></li>
           <li><a href="/">Широкоформатная печать</a></li>
           <li><a href="./html/polygraphy.html">Рекламная полиграфия</a></li>
@@ -52,7 +62,7 @@
       <section>
         <p>Наши преимущества</p>
         <h2>Создаем рекламу и формируем имидж компаний</h2>
-        <ul>
+        <ul class="list">
           <li>
             <p>18+</p>
             <p>лет опыта на рекламном рынке</p>
@@ -75,7 +85,7 @@
       <section>
         <p>наши работы</p>
         <h2>воплощаем идеи</h2>
-        <ul>
+        <ul class="list">
           <li>
             <div>
               <img
@@ -155,7 +165,7 @@
         <p>наши партнёры</p>
         <h2>400+ компаний доверяют нам</h2>
         <ul>
-          <li>
+          <li class="list">
             <a href="/"> <img src="./images/brend/brend1.jpg" alt="puma" /></a>
           </li>
           <li>
@@ -195,7 +205,7 @@
       <section>
         <p>статьи и новости</p>
         <h2>все самое интересное</h2>
-        <ul>
+        <ul class="list">
           <li>
             <p>новость</p>
             <div>
@@ -255,7 +265,7 @@
         <button type="button">оставить заявку</button>
       </div>
       <nav>
-        <ul>
+        <ul class="list">
           <li><a href="./html/about.html"> о компании</a></li>
           <li><a href="./html/features.html"> услуги</a></li>
           <li><a href="./html/works.html"> Наши работы</a></li>
@@ -282,7 +292,7 @@
       </div>
       <div>
         <p>&copy; 2011 - 2020 Promomix</p>
-        <ul>
+        <ul class="list">
           <li><a href="/">Facebook</a></li>
           <li><a href="/">Vkontakte</a></li>
           <li><a href="/">Instagram</a></li>
