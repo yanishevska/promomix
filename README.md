@@ -10,3 +10,10 @@ height: 1px !important;
 width: 1px !important;
 overflow: hidden;
 }
+
+<img
+              src="./images/icon.svg/Vector.svg"
+              alt=""
+              width="16"
+              height="16"
+            />

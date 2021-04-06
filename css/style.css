@@ -117,6 +117,17 @@ a:hover {
   padding-top: 40px;
   padding-bottom: 40px;
 }
+
+.icon-header {
+  margin-right: 9px;
+  fill: currentColor;
+}
+
+.button-search {
+  display: flex;
+  align-items: center;
+}
+
 /*.header {
   background-color: grey;
 }*/
@@ -301,7 +312,7 @@ h3 {
 
 .line::before {
   content: "";
-  display: inline-block;
+  display: block;
   flex-direction: column;
   width: 70px;
   height: 1px;
@@ -391,13 +402,19 @@ a .partners-logo {
   padding-bottom: 15px;
 }
 
+.works-item img {
+  margin-bottom: 20px;
+}
+
 .container .title-second {
   margin-bottom: 60px;
 }
 
+/*all-link*/
+
 .long-line::before {
   content: "";
-  display: inline-block;
+  display: block;
   flex-direction: column;
   width: 1000px;
   height: 1px;
@@ -407,12 +424,18 @@ a .partners-logo {
 }
 
 .line-button {
-  display: flex;
+  display: contents;
   text-align: center;
 }
 
 .icon-plus {
-  color: var(--main-black);
+  stroke: currentColor;
+}
+
+.link-all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /*
@@ -482,9 +505,118 @@ a .partners-logo {
   margin-right: 15px;
 }
 
-/*footer*/
+/*Футер*/
 
 .section.footer {
   padding-top: 0;
   background-color: var(--main-background);
+}
+
+/*Верх*/
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*Слева*/
+.footer-left,
+.footer-right {
+  width: 50%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.footer-left a {
+  margin-bottom: 60px;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.footer-left {
+  padding-right: 239px;
+}
+
+.footer-left span {
+  color: var(--main-red);
+  display: block;
+}
+
+.footer-left button {
+  padding: 22px 44px;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-color: var(--main-red);
+  cursor: pointer;
+}
+
+/*Справа*/
+.footer-right {
+  display: flex;
+}
+
+.footer-right div {
+  padding-right: 30px;
+}
+
+.footer-right nav,
+.footer-right div {
+  width: 50%;
+}
+
+.footer-right a {
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.footer-right-text {
+  margin-bottom: 64px;
+
+  line-height: 1.5;
+}
+
+.footer-form input {
+  border: none;
+  cursor: pointer;
+  padding-bottom: 15px;
+}
+
+.footer-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--main-black);
+}
+
+.footer-form button {
+  border: none;
+  cursor: pointer;
+}
+
+.footer-form:hover input::placeholder,
+.footer-form:focus input::placeholder {
+  color: var(--main-red);
+}
+/*.footer-form input::placeholder {
+}*/
+
+/*Низ*/
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom ul {
+  display: flex;
+}
+
+.footer-bottom li:not(:last-child) {
+  margin-right: 32px;
+}
+
+.footer-bottom a {
+  padding-top: 43px;
+  padding-bottom: 43px;
 }
