@@ -4,20 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.min.css"
-    />
+   
     <title>Complex</title>
+
+  <link rel="stylesheet" href="../css/modern-normalize.css" />
+    <link rel="stylesheet" href="../font/stylesheet.css" />
+    <link rel="stylesheet" href="../css/about.css" />
   </head>
   <body>
-    <header>
-      <a href="../index.html">promomix</a>
-      <nav>
-        <ul>
-          <li><button type="button">поиск</button></li>
-          <li><a href="tel:84964290900">8 496 429 09 00</a></li>
-          <li><button type="button">оставить заявку</button></li>
+    <header class="header" id="header">
+      <nav class="navigator container">
+        <a class="logo" href="./index.html">
+          <img
+            src="../images/icon.svg/logo.svg"
+            alt=""
+            width="164"
+            height="20"
+          />
+          <!--<svg class="logo-hero" width="164" height="20">
+            <use href="./images/icon.svg/symbol-defs-logo.svg"></use>
+          </svg>-->
+        </a>
+        <ul class="list">
+          <li class="list-item">
+            <button type="button" class="button-search">
+              <svg class="icon-header" width="20" height="20">
+                <use href="../images/icon.svg/sprite.svg#icon-search"></use>
+              </svg>
+              поиск
+            </button>
+          </li>
+          <li class="list-item">
+            <a href="tel:84964290900">8 496 429 09 00</a>
+          </li>
+          <li class="list-item">
+            <button type="button">оставить заявку</button>
+          </li>
         </ul>
       </nav>
     </header>
@@ -170,44 +192,62 @@
       </section>
     </main>
 
-    <footer>
-      <div>
-        <a href="">Promomix – рекламное агентство полного цикла</a>
-        <button type="button">оставить заявку</button>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="./about.html"> О компании</a></li>
-          <li><a href="./features.html"> Услуги</a></li>
-          <li><a href="./works.html"> Наши работы</a></li>
-          <li><a href="./services.html"> Сервис</a></li>
-          <li><a href="./complex.html"> Комплексные решения</a></li>
-          <li><a href="./posts.html"> Статьи и новости</a></li>
-          <li><a href="./contacts.html"> Контакты</a></li>
-        </ul>
-      </nav>
-      <div>
-        <p>
-          Чтобы быть в курсе всех акций и новых событий, подпишитесь на нашу
-          рассылку.
-        </p>
-        <form>
-          <input type="email" placeholder="Ваш e-mail" />
-          <!--<input
+   <!--Футер-->
+
+    <footer class="section footer">
+      <div class="container">
+        <!--Верх-->
+
+        <div class="footer-top">
+          <!--Слева-->
+          <div class="footer-left">
+            <a href="">
+              <span> Promomix –</span> рекламное агентство полного цикла</a
+            >
+            <button type="button">оставить заявку</button>
+          </div>
+
+          <!--Справа-->
+          <div class="footer-right">
+            <nav>
+              <ul class="list">
+                <li><a href="./about.html"> О компании</a></li>
+                <li><a href="./features.html"> Услуги</a></li>
+                <li><a href="./works.html"> Наши работы</a></li>
+                <li><a href="./services.html"> Сервис</a></li>
+                <li><a href="./complex.html"> Комплексные решения</a></li>
+                <li><a href="./posts.html"> Статьи и новости</a></li>
+                <li><a href="./contacts.html"> Контакты</a></li>
+              </ul>
+            </nav>
+            <div>
+              <p class="footer-right-text">
+                Чтобы быть в курсе всех акций и новых событий, подпишитесь на
+                нашу рассылку.
+              </p>
+              <form class="footer-form">
+                <input type="email" placeholder="Ваш e-mail" />
+                <!--<input
             type="submit"
             placeholder="&#8594;"
           />-->
 
-          <button type="submit">&#8594;</button>
-        </form>
-      </div>
-      <div>
-        <p>&copy; 2011 - 2020 Promomix</p>
-        <ul>
-          <li><a href="/">Facebook</a></li>
-          <li><a href="/">Vkontakte</a></li>
-          <li><a href="/">Instagram</a></li>
-        </ul>
+                <button type="submit">&#8594;</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!--Низ-->
+
+        <div class="footer-bottom">
+          <p>&copy; 2011 - 2020 Promomix</p>
+          <ul class="list">
+            <li><a href="/">Facebook</a></li>
+            <li><a href="/">Vkontakte</a></li>
+            <li><a href="/">Instagram</a></li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
