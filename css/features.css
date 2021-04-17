@@ -124,13 +124,120 @@ a:hover {
   align-items: center;
 }
 
-/*footer*/
+/*services*/
 
+.all-services {
+  padding-top: 100px;
+}
+
+.services-title h1 {
+  margin-bottom: 146px;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 1.2;
+}
+
+.icon {
+  display: inline-block;
+
+  fill: var(--main-red);
+  margin: 37px 47px 38px 37px;
+}
+
+.list .services-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 255px;
+  height: 255px;
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.services-item-link {
+  transition: color var(--animation), background-color var(--animation);
+}
+
+.services-item-link:hover,
+.services-item-link:focus {
+  color: var(--main-white);
+  background-color: var(--main-red);
+}
+
+.services-item-link {
+  display: flex;
+  align-items: center;
+  font-size: 19px;
+  line-height: 1.31;
+  width: 450px;
+  height: 130px;
+
+  transition: color var(--animation);
+}
+
+.services-item-link:hover,
+.services-item-link:focus {
+  color: var(--main-white);
+}
+
+.services-item-link .icon {
+  transition: fill var(--animation);
+}
+
+.services-item-link:hover .icon,
+.services-item-link:focus .icon {
+  fill: currentColor;
+}
+
+.services-list-left {
+  display: flex;
+  width: 50%;
+}
+.services-list-right {
+  display: flex;
+  width: 50%;
+  margin-left: 180px;
+  padding-bottom: 150px;
+}
+
+.services-blok-left {
+  display: block;
+}
+
+.services-blok-left,
+.services-blok-right {
+  width: 50%;
+}
+.services-blok-left {
+  margin-right: 60px;
+}
+
+.blok-list {
+  margin-top: 40px;
+}
+
+.blok-list li {
+  margin-bottom: 26px;
+}
+
+.line::before {
+  content: "";
+  display: block;
+  flex-direction: column;
+  width: 570px;
+  height: 1px;
+  background-color: var(--main-grey);
+  margin-bottom: 20px;
+}
 /*Футер*/
 
 .section.footer {
   padding-top: 0;
-  background-color: var(--main-background);
 }
 
 /*Верх*/
@@ -138,6 +245,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--main-background);
 }
 /*Слева*/
 .footer-left,
