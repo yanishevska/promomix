@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   
+
     <title>Flayers</title>
-  <link rel="stylesheet" href="../css/modern-normalize.css" />
+    <link rel="stylesheet" href="../css/modern-normalize.css" />
     <link rel="stylesheet" href="../font/stylesheet.css" />
-    <link rel="stylesheet" href="../css/about.css" />
+    <link rel="stylesheet" href="../css/flyers.css" />
   </head>
   <body>
     <header class="header" id="header">
@@ -393,24 +393,31 @@
         </ul>
         <a href="">все роботы</a>
       </section>
-
-      <section>
-        <h2>Заявка</h2>
-        <p>
-          Оставьте заявку, наш менеджер обработает её и свяжется с вами в
-          ближайшее время
-        </p>
-        <form>
-          <input type="text" name="username" placeholder="Имя" />
-          <input type="tel" name="phone" placeholder="Телефон" />
-          <input type="text" placeholder="Комментарий к заявке" />
-          <span>Прикрепить файл</span>
-          <button type="submit">отправить</button>
-          <p>
-            Нажимая «Отправить» вы даёте согласие на обработку персональных
-            данных
-          </p>
-        </form>
+      <!--Заявка-->
+      <section class="proposal section">
+        <div class="container">
+          <div class="proposal-block">
+            <h2 class="proposal-block__title">Заявка</h2>
+            <p class="proposal-block__description">
+              Оставьте заявку, наш менеджер обработает её и свяжется с вами в
+              ближайшее время
+            </p>
+          </div>
+          <form class="proposal-form">
+            <input type="text" name="username" placeholder="Имя" />
+            <input type="tel" name="phone" placeholder="Телефон" />
+            <input type="text" placeholder="Комментарий к заявке" />
+            <label for="file">Прикрепить файл</label>
+            <input id="file" type="file" />
+            <div class="proposal-form__div">
+              <button type="submit">отправить</button>
+              <span class="proposal-form__span">
+                Нажимая «Отправить» вы даёте согласие на обработку персональных
+                данных
+              </span>
+            </div>
+          </form>
+        </div>
       </section>
 
       <div>
@@ -422,7 +429,7 @@
       </div>
     </main>
 
-   <!--Футер-->
+    <!--Футер-->
 
     <footer class="section footer">
       <div class="container">

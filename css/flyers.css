@@ -6,6 +6,7 @@
   --main-white: #ffffff;
   --main-background: #f2f4f7;
   --grid-item: 4;
+  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -124,8 +125,101 @@ a:hover {
   align-items: center;
 }
 
-/*footer*/
+.proposal .container {
+  display: flex;
+  justify-content: space-between;
+}
 
+.proposal-block {
+  padding-right: 260px;
+  width: calc((100% - 60px) / 2);
+}
+
+.proposal-form {
+  width: calc((100% - 60px) / 2);
+}
+
+.proposal-block__title {
+  font-weight: 500;
+  font-size: 37px;
+  line-height: 1.2;
+  text-transform: capitalize;
+  padding-bottom: 37px;
+}
+
+.proposal-block__description {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.proposal-form input,
+.proposal-form textarea {
+  display: block;
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid var(--main-grey);
+  padding-bottom: 15px;
+  margin-top: 47px;
+}
+.proposal-form input:first-child {
+  margin-top: 0;
+}
+
+.proposal-form textarea {
+  resize: none;
+}
+
+.proposal-form input[type="file"] {
+  visibility: hidden;
+  margin-top: 0;
+}
+
+.proposal-form input::placeholder,
+.proposal-form textarea::placeholder {
+  color: var(--main-black);
+}
+
+.proposal-form label {
+  display: block;
+  width: 133px;
+  margin-top: 47px;
+  margin-bottom: 3px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid var(--main-grey);
+}
+
+.proposal-form button {
+  padding: 22px 44px;
+  background-color: transparent;
+  font-weight: 500;
+  line-height: 1;
+  font-size: 12px;
+  text-align: center;
+  color: var(--main-black);
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid var(--main-red);
+
+  transition: background-color var(--animation), color var(--animation);
+}
+.proposal-form button:hover,
+.proposal-form button:focus {
+  background-color: var(--main-red);
+  color: var(--main-white);
+}
+
+.proposal-form__span {
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--main-grey);
+  margin-left: 60px;
+}
+
+.proposal-form__div {
+  display: flex;
+  align-items: center;
+}
 /*Футер*/
 
 .section.footer {

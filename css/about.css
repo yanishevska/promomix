@@ -613,10 +613,20 @@ a {
 .comment {
   border: none;
   border-bottom: 1px solid var(--main-grey);
+
+  transition: border-bottom var(--animation);
+}
+
+.form-field input:hover,
+.form-field input:focus,
+.comment:hover,
+.comment:focus {
+  border-bottom: 1px solid var(--main-red);
 }
 
 .comment {
   resize: none;
+  width: 570px;
 }
 
 .form .button {
@@ -629,6 +639,35 @@ a {
 .form .button:focus {
   color: var(--main-white);
   background-color: var(--main-red);
+}
+
+.form-field {
+  position: relative;
+  margin-bottom: 47px;
+}
+
+.form-label {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  transform: translateY(-20px);
+
+  transition: transform var(--animation), font-size var(--animation),
+    color var(--animation);
+}
+
+.form-input,
+.comment {
+  width: 570px;
+  padding-top: 9px;
+  padding-bottom: 15px;
+}
+
+.form-input:focus + .form-label,
+.comment:focus + .form-label {
+  transform: translateY(-50px);
+  font-size: 12px;
+  color: var(--main-grey);
 }
 /*Футер*/
 

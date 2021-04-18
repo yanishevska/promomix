@@ -81,7 +81,89 @@ a:hover {
   padding-bottom: 200px;
 }
 
+/*hamburger menu*/
+.hamburger-menu {
+  position: absolute;
+  left: -70px;
+  top: 35px;
+}
+#menu__toggle {
+  opacity: 0;
+}
+
+.span {
+  position: relative;
+  display: block;
+  width: 14px;
+  height: 2px;
+  background: var(--main-black);
+}
+
+.span::before,
+.span::after {
+  position: absolute;
+  content: "";
+  display: block;
+  background: var(--main-black);
+  height: 100%;
+}
+
+.span::before {
+  width: 24px;
+  top: -7px;
+}
+
+.span::after {
+  width: 20px;
+  top: 7px;
+}
+
+.menu-list {
+  display: block;
+  justify-content: flex-end;
+  visibility: hidden;
+  /* background-color: var(--main-white);*/
+  background-color: rgb(218, 109, 109);
+  position: absolute;
+  bottom: -100px;
+  padding-bottom: 50px;
+  padding-top: 107px;
+}
+
+.menu-list li {
+  padding-bottom: 40px;
+  font-size: 35px;
+  margin-left: 830px;
+}
+
+#menu__toggle:checked ~ .menu__btn .span {
+  background: transparent;
+}
+
+#menu__toggle:checked ~ .menu__btn .span::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn .span::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+#menu__toggle:checked ~ .menu-list {
+  visibility: visible;
+  position: fixed;
+  left: 50px;
+
+  top: 104px;
+  width: 100%;
+  height: 800px;
+}
 /*header*/
+
+.header .navigator {
+  position: relative;
+}
 
 .list-item:not(:last-child) {
   margin-right: 120px;
