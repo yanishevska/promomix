@@ -220,8 +220,8 @@ a:hover {
   transition: color var(--animation), background-color var(--animation);
 }
 
-.services-item-link:hover,
-.services-item-link:focus {
+.services-item:hover,
+.services-item:focus {
   color: var(--main-white);
   background-color: var(--main-red);
 }
@@ -619,8 +619,6 @@ a {
   resize: none;
 }
 
-.form-field.pdf input {
-}
 .form .button {
   margin-top: 42px;
 
@@ -676,6 +674,7 @@ a {
   text-transform: uppercase;
   border-color: var(--main-red);
   cursor: pointer;
+  background-color: var(--main-white);
 }
 
 /*Справа*/

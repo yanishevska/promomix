@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   
+
     <title>Polygraphy</title>
-  <link rel="stylesheet" href="../css/modern-normalize.css" />
+    <link rel="stylesheet" href="../css/modern-normalize.css" />
     <link rel="stylesheet" href="../font/stylesheet.css" />
-    <link rel="stylesheet" href="../css/about.css" />
+    <link rel="stylesheet" href="../css/polygraphy.css" />
   </head>
   <body>
     <header class="header" id="header">
@@ -198,80 +198,127 @@
         </ul>
       </section>
 
-      <section>
-        <h2>наши работы</h2>
-        <ul>
-          <li>
-            <div>
-              <img
-                src="../images/our-job/img1.jpg"
-                alt="img"
-                width="360"
-                height="270"
-              />
-              <h3>кафе Starbucks Coffee</h3>
-              <p>вывеска объемная</p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <img
-                src="../images/our-job/img3.jpg"
-                alt="img"
-                width="360"
-                height="360"
-              />
-              <h3>сеть ресторанов Emosi</h3>
-              <p>вывеска объемная</p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <img
-                src="../images/our-job/img2.jpg"
-                alt="img"
-                width="360"
-                height="270"
-              />
-              <h3>вio бутик Flora</h3>
-              <p>наружная реклама</p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <img
-                src="../images/our-job/img6.jpg"
-                alt="img"
-                width="360"
-                height="360"
-              />
-              <h3>магазин Levi's</h3>
-              <p>входная группа и вывеска</p>
-            </div>
-          </li>
-        </ul>
-        <a href="">все роботы</a>
+      <!--наши работы-->
+
+      <section class="section our-works">
+        <div class="container">
+          <h2 class="title-second">Наши работы</h2>
+          <ul class="job-list">
+            <li class="job-item">
+              <div>
+                <a href="">
+                  <img
+                    src="../images/our-job/img1.jpg"
+                    alt="img"
+                    width="360"
+                    height="270"
+                  />
+                  <h3>Кафе Starbucks Coffee</h3>
+                  <p class="title-paragraf">вывеска объемная</p>
+                </a>
+              </div>
+            </li>
+
+            <li class="job-item">
+              <div>
+                <a href="">
+                  <img
+                    src="../images/our-job/img3.jpg"
+                    alt="img"
+                    width="360"
+                    height="360"
+                  />
+                  <h3>Сеть ресторанов Emosi</h3>
+                  <p class="title-paragraf">вывеска объемная</p>
+                </a>
+              </div>
+            </li>
+
+            <li class="job-item">
+              <div>
+                <a href="">
+                  <img
+                    src="../images/all-our-job/img3-min.jpg"
+                    alt="img"
+                    width="360"
+                    height="270"
+                  />
+                  <h3>Релакс студия Flora</h3>
+                  <p class="title-paragraf">наружная реклама</p>
+                </a>
+              </div>
+            </li>
+            <!--<li class="job-item">
+              <div>
+                <img
+                  src="../images/our-job/img6.jpg"
+                  alt="img"
+                  width="360"
+                  height="360"
+                />
+                <h3>магазин Levi's</h3>
+                <p>входная группа и вывеска</p>
+              </div>
+            </li>-->
+          </ul>
+
+          <div class="all">
+            <a href="" class="link-all">
+              <svg class="icon-plus" width="23" height="23">
+                <use href="../images/icon.svg/sprite.svg#icon-plus"></use>
+              </svg>
+
+              <span class="long-line line-button"> Все работы </span>
+            </a>
+          </div>
+        </div>
       </section>
 
       <!--секция заявка-->
 
-      <section>
-        <h2>Заявка</h2>
-        <p>
-          Оставьте заявку, наш менеджер обработает её и свяжется с вами в
-          ближайшее время
-        </p>
-        <form>
-          <input type="text" name="username" placeholder="Имя" />
-          <input type="tel" name="phone" placeholder="Телефон" />
-          <input type="text" placeholder="Комментарий к заявке" />
-          <span>Прикрепить файл</span>
-          <button type="submit">отправить</button>
-          <p>
-            Нажимая «Отправить» вы даёте согласие на обработку персональных
-            данных
-          </p>
-        </form>
+      <section class="section form-section">
+        <div class="container form-container">
+          <div class="form-title">
+            <h2>Заявка</h2>
+            <p>
+              Оставьте заявку, наш менеджер обработает её и свяжется с вами в
+              ближайшее время
+            </p>
+          </div>
+
+          <div class="form">
+            <form class="form" autocomplete="off" novalidate>
+              <div class="form-field">
+                <input class="form-input" type="text" name="name" id="name" />
+                <label for="name" class="form-label">Имя</label>
+              </div>
+
+              <div class="form-field">
+                <input class="form-input" type="tel" name="tel" id="tel" />
+                <label for="tel" class="form-label">Телефон</label>
+              </div>
+
+              <div class="form-field">
+                <textarea
+                  class="comment"
+                  name="comment"
+                  id="comment"
+                  rows="2"
+                ></textarea>
+                <label for="comment" class="form-label"
+                  >Комментарий к заявке</label
+                >
+              </div>
+
+              <div class="form-field pdf">
+                <input type="file" name="pdf" id="pdf" />
+                <label for="pdf" class="form-label">Прикрепить файл</label>
+              </div>
+
+              <button class="button" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
       </section>
 
       <div>
@@ -295,7 +342,7 @@
             <a href="">
               <span> Promomix –</span> рекламное агентство полного цикла</a
             >
-            <button type="button">оставить заявку</button>
+            <button class="button" type="button">оставить заявку</button>
           </div>
 
           <!--Справа-->

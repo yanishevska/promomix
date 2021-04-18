@@ -6,6 +6,7 @@
   --main-white: #ffffff;
   --main-background: #f2f4f7;
   --grid-item: 4;
+  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -43,6 +44,11 @@ img {
 
 button {
   text-transform: inherit;
+}
+
+button,
+a {
+  transition: color var(--animation);
 }
 
 button:hover,
